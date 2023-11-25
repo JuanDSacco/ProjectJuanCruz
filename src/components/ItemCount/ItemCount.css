@@ -1,0 +1,43 @@
+.btnAgregarAlCarro{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+margin-bottom: 1rem;
+
+}
+
+.btnAgregarSacar{
+    
+display: flex;
+padding: 2rem;
+margin: 1rem;
+width: 100%;
+align-items: center;
+justify-content: center;
+
+}
+
+.buttonMas{
+    margin: 1rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.buttonMenos{
+    margin: 1rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.cantidadNum{
+
+    height: 2rem;
+}
+
+.agregar{
+    margin: 1rem;
+    width: 6rem;
+    cursor: pointer;
+}

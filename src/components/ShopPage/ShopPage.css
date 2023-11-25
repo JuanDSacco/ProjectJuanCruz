@@ -1,0 +1,28 @@
+.Shopcar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.ShopForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+}
+
+.textF {
+    height: 5rem;
+    width: 30rem;
+}
+
+button {
+
+    height: 2rem;
+    width: 4rem;
+    border-radius: 3px;
+}

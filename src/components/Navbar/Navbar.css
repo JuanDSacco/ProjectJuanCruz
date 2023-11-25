@@ -1,0 +1,15 @@
+.Navbar, ul, li, a, p{
+text-decoration: none;
+list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+
+
+}
+
+
