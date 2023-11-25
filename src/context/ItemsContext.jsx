@@ -9,7 +9,7 @@ const CartContextProvider = ({children}) =>{
 
     const [cantidad, setCantidad] = useState(1);
 
-const [carrito, setCarrito] = useState([]);
+  const [carrito, setCarrito] = useState([]);
 
     const handleSumar = () => {
         cantidad >= 1 && setCantidad(cantidad + 1);
@@ -17,23 +17,6 @@ const [carrito, setCarrito] = useState([]);
     
       const handleRestar = () => {
         cantidad > 1 && setCantidad(cantidad - 1);
-      };
-    
-      const handleAgregar = () => {
-        const itemAgregado = { ...instrument, cantidad };
-        const nuevoCarrito = [...carrito];
-        const estaEnCarro = nuevoCarrito.find(
-          (producto) => producto.id === itemAgregado.id
-        );
-    
-        if (estaEnCarro) {
-          estaEnCarro.cantidad += cantidad;
-          
-        } else {
-          nuevoCarrito.push(itemAgregado);
-          
-        }
-        setCarrito(nuevoCarrito);
       };
 
     const cantidadEnCarrito = () => {
@@ -53,13 +36,12 @@ const [carrito, setCarrito] = useState([]);
 return ( 
   <ItemsContext.Provider value={{
       carrito, 
-      setCarrito, 
+      setCarrito,
       cantidadEnCarrito, 
       precioTotal, 
       vaciarCarrito, 
       handleSumar, 
       handleRestar, 
-      handleAgregar, 
       cantidad
       }}>
       {children}

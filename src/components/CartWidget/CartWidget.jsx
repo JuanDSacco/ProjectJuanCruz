@@ -16,8 +16,6 @@ const {cantidadEnCarrito} = useContext(ItemsContext)
         <p>{cantidadEnCarrito()}</p>
       </Link>
       </div>
-      
-    
   );
 };
 

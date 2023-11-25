@@ -26,3 +26,36 @@ button {
     width: 4rem;
     border-radius: 3px;
 }
+
+.divShop1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.divSHop2{
+    text-align: center;
+}
+
+.pDivShop{
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.h2Shop{
+    font-size: 30px;
+}
+
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

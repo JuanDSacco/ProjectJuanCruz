@@ -41,25 +41,27 @@ const ShopPage = () => {
 
   return (
     <>
-      <div>
+      <div> 
         <h1>ShopPage</h1>
 
         {carrito.map((prod) => (
-          <div>
-            <h3>{prod.name}</h3>
-            <p>Precio unitario: {prod.price}</p>
-            <p>Precio total: {prod.price * prod.cantidad}</p>
-            <p>Cantidad: {prod.cantidad}</p>
+          <div className="divShop1" key={prod.id}>
+            <h2 className="h2Shop">Instrumento: {prod.name}</h2>
+            <p className="pDivShop">Precio unitario: {prod.price}</p>
+            <p className="pDivShop">Precio total: {prod.price * prod.cantidad}</p>
+            <p className="pDivShop">Cantidad: {prod.cantidad}</p>
           </div>
         ))}
         {carrito.length > 0 && (
-          <>
+          <div className="divShop1">
             <h2>Precio total: $ {precioTotal()}</h2>
             <button onClick={handleVaciarCarrito}>Vaciar Carrito</button>
-          </>
+          </div>
         )}
       </div>
-
+          <div className="divSHop2">
+            <h3>Al completar los datos y enviar el formulario se le entregará el número de pedido</h3>
+          </div>
       <div className="Shopcar">
         <form className="ShopForm" onSubmit={handleOnSubmit}>
           <TextField

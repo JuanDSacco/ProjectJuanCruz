@@ -9,6 +9,9 @@ import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
 
 const CardInstrument = ({ instrument }) => {
+
+
+  
   return (
     <div className="tarjet">
       <Card sx={{ maxWidth: 340 }}>
